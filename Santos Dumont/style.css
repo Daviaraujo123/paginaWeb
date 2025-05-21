@@ -1,43 +1,19 @@
-body,
 * {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: #dbcab4;
-
-    @media (max-width: 1024px) {
-        .lista {
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .menu a {
-            font-size: 50px;
-        }
-
-        .conteudo,
-        .curiosidades, .linhadotempo {
-            padding: 20px;
-        }
-
-        h2,
-        h3,
-        h4 {
-            font-size: 40px;
-        }
-    }
 }
 
 ul,
 li,
 h1 {
     margin: 0 auto;
-    padding: 0 auto;
     overflow-x: auto;
     font-size: 1.2rem;
-
 }
 
 a {
@@ -46,13 +22,12 @@ a {
 }
 
 header {
-    background-image: linear-gradient(to bottom right, rgb(71, 71, 71), rgb(71, 71, 71));
+    background: linear-gradient(to bottom right, rgb(71, 71, 71), rgb(71, 71, 71));
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
     padding: 10px;
-
 }
 
 .foto {
@@ -63,50 +38,13 @@ header {
     margin-left: 38px;
 }
 
-.foto14-bis {
+.foto14-bis,
+.dirigivel,
+.criança,
+.paris,
+.demoiselle,
+.fim {
     display: flex;
-    box-sizing: border-box;
-    width: 220px;
-    height: 320px;
-    align-items: center;
-    margin: 15px auto;
-    margin: center;
-    border: 8px groove rgb(97, 97, 97);
-}
-
-.dirigivel {
-    display: flex;
-    box-sizing: border-box;
-    width: 220px;
-    height: 320px;
-    align-items: center;
-    margin: 15px auto;
-    border: 8px groove rgb(97, 97, 97);
-}
-
-.criança {
-    display: flex;
-    box-sizing: border-box;
-    width: 220px;
-    height: 320px;
-    align-items: center;
-    margin: 15px auto;
-    border: 8px groove rgb(97, 97, 97);
-}
-
-.paris {
-    display: flex;
-    box-sizing: border-box;
-    width: 220px;
-    height: 320px;
-    align-items: center;
-    margin: 15px auto;
-    border: 8px groove rgb(97, 97, 97);
-}
-
-.demoiselle {
-    display: flex;
-    box-sizing: border-box;
     width: 220px;
     height: 320px;
     align-items: center;
@@ -115,14 +53,7 @@ header {
 }
 
 .fim {
-    display: flex;
-    box-sizing: border-box;
-    width: 220px;
-    height: 320px;
-    align-items: center;
     margin-bottom: 15px;
-    margin: 15px auto;
-    border: 8px groove rgb(97, 97, 97);
 }
 
 .menu {
@@ -132,139 +63,96 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
-
 }
 
 .menu ul {
     text-align: center;
-    padding: 0;
     margin: 0 auto;
 }
 
 .menu li {
-    align-items: center;
     font-size: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: initial;
     font-weight: bold;
 }
 
 .menu a {
-    text-decoration: none;
     color: #9c7a4d;
     font-size: 100px;
-    -webkit-text-stroke: 2px #000000;
-
+    -webkit-text-stroke: 2px #000;
 }
 
 p {
     margin: 5px;
-    padding: 0px;
     text-align: justify;
 }
 
-h2 {
-    padding: 30px 0 px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    font-size: 60px;
-    text-align: center;
+h2,
+h3,
+h4 {
     color: #9c7a4d;
-    -webkit-text-stroke: 1px #000000;
+    -webkit-text-stroke: 1px #000;
     font-family: cursive;
     font-weight: bold;
+    text-align: center;
+    font-size: 60px;
 }
 
-.conteudo {
+h2 {
+    padding: 30px 0;
+    margin: -10px 0 10px;
+}
+
+h3 {
+    padding: 40px 50px;
+    margin: -70px 0 -30px;
+    text-align: justify;
+    background-color: #dbcab4;
+}
+
+.linhadotempo h3 {
+    font-size: 50px;
+}
+
+h4 {
+    padding: 10px 50px;
+    margin: -15px 0 10px;
+}
+
+.conteudo,
+.curiosidades {
     padding: 20px 50px;
     background-color: #dbcab4;
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000000;
+    color: #000;
     text-align: justify;
-
     width: 100%;
-    height: auto;
-    margin: none;
-    max-width: none;
-
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.conteudo p {
+.conteudo p,
+.curiosidades {
     text-indent: 15px;
-}
-
-h3 {
-    padding: 40px 50px;
-    margin-top: -70px;
-    margin-bottom: -30px;
-    font-size: 60px;
-    text-align: justify;
-    color: #9c7a4d;
-    -webkit-text-stroke: 1px #000000;
-    font-family: cursive;
-    font-weight: bold;
-    background-color: #dbcab4;
-}
-
-.linhadotempo h4{
-    display: flex;
-    
 }
 
 .lista {
     padding: 20px;
     background-color: #dbcab4;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000000;
+    color: #000;
     text-align: justify;
-
     margin: 10px 50px;
-    border: 5px double #000000;
+    border: 5px double #000;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
     display: flex;
     flex-direction: row;
-}
-
-h4 {
-    padding: 10px 50 px;
-    margin-top: -15px;
-    margin-bottom: 10px;
-    font-size: 60px;
-    text-align: center;
-    color: #9c7a4d;
-    -webkit-text-stroke: 1px #000000;
-    font-family: cursive;
-    font-weight: bold;
-}
-
-.curiosidades {
-    margin-top: 15px;
-    padding: 10px 50px;
-    background-color: #dbcab4;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000000;
-    text-align: left;
-    text-indent: 5px;
-
-    width: 100%;
-    height: auto;
-    margin: none;
-    max-width: none;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    gap: 10px;
 }
 
 .rodape {
@@ -274,8 +162,63 @@ h4 {
     justify-content: center;
     padding: 5px;
     font-size: 55px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-text-stroke: 1px rgb(44, 44, 44);
     color: #9c7a4d;
-    text-shadow: 1px -2px 5px rgb(0, 0, 0);
+    text-shadow: 1px -2px 5px #000;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foto {
+        width: 140px;
+        height: 180px;
+        margin-left: 0;
+    }
+
+    .foto14-bis,
+    .dirigivel,
+    .criança,
+    .paris,
+    .demoiselle,
+    .fim {
+        width: 160px;
+        height: 220px;
+    }
+
+    .menu a {
+        font-size: 50px;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    .menu li {
+        font-size: 8px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 35px;
+    }
+
+    .conteudo,
+    .curiosidades {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .lista {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px 20px;
+    }
+
+    .rodape {
+        font-size: 30px;
+        text-align: center;
+    }
 }
